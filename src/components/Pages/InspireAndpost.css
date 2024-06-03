@@ -1,0 +1,414 @@
+.inspire-post {
+    width: 100%;
+    height: 150vh;
+    margin-top: 300px;
+}
+
+.inspiration {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.latest-post {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inspire-left {
+    margin-top: -100px;
+    width: 830px;
+    max-height: 400px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 1px solid rgb(221, 221, 221);
+    overflow: hidden;
+
+}
+
+
+
+.inspire-left h2 {
+    text-align: start;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.inspire-lect-down {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4px;
+    padding-right: 4px;
+    overflow: hidden;
+    margin-left: 0;
+    animation: scroll 20s infinite;
+
+}
+
+@keyframes scroll {
+    0% {
+        margin-left: -1800px;
+        /* animation-duration: 15s; */
+    }
+
+    25% {
+        margin-left: 0px;
+    }
+
+    50% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: -1680px;
+    }
+}
+
+.current {
+    margin-left: -420px;
+    transition: .5s;
+}
+
+.slide-icon span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(175, 173, 173);
+    color: rgb(68, 66, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.slide-icon span:hover {
+    border: 1px solid #666;
+}
+
+.slide-icon {
+    padding: 5px;
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+
+.left-slide {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    margin-right: 420px;
+
+
+
+}
+
+
+
+.inspire-left .left-slide .img-cover {
+    width: 400px;
+    height: 300px;
+    z-index: 1;
+    border-radius: 15px;
+
+
+}
+
+.inspire-left .left-slide img {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+
+}
+
+.inspire-left .left-slide .img-cover button {
+    margin-top: 15%;
+}
+
+.post-slide {
+    display: flex;
+
+}
+
+.inspire-right {
+    width: 400px;
+    height: 500px;
+    margin-left: 20px;
+    border-radius: 15px;
+    border: 1px solid rgb(221, 221, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    flex-direction: column;
+
+
+
+}
+
+.inspire-post-info-box {
+    width: 95%;
+    height: 300px;
+    position: relative;
+    border-radius: 15px;
+    margin-top: -10px;
+
+}
+
+.inspire-span-box {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-top: 140px;
+}
+
+.h2andp {
+    width: 380px;
+}
+
+.h2andp p {
+    margin-left: 35px;
+    margin-top: -5px;
+}
+
+.inspire-span-box span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(175, 173, 173);
+    color: rgb(58, 58, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.inspire-span-box span:hover {
+    border: 1px solid #666;
+}
+
+.inspire-right-info {
+    width: 200px;
+    animation: slidePost .5s forwards;
+
+}
+
+.inspire-right-info .img-cover {
+    width: 380px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+
+
+}
+
+@keyframes slidePost {
+    0% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.inspire-right-info img {
+    width: 380px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.inspire-right-info .img-cover button {
+    margin-top: 50px;
+}
+
+
+.latest-post-left {
+    width: 65%;
+    margin-left: 10px;
+    border-radius: 15px;
+    height: 150vh;
+    /* background-color: red; */
+    border: 1px solid rgb(221, 221, 221);
+
+}
+
+.latest-post-left h2 {
+    text-align: start;
+    margin-left: 5px;
+}
+
+.latest-post-left-info {
+    width: 90%;
+    height: 250px;
+    margin-bottom: 10px;
+    display: flex;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.latest-post-left-info img {
+    width: 300px;
+    height: 250px;
+    margin-right: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.latest-post-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.latest-post-header p {
+    margin-right: 30px;
+    position: relative;
+    color: #777;
+}
+
+.latest-post-header .p-dot::after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #666;
+    border-radius: 50%;
+    top: 5px;
+    left: -15px;
+}
+
+.latest-post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.share-box {
+    display: flex;
+    animation: share_slide .5s forwards;
+
+}
+
+@keyframes share_slide {
+    0% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.share-box .icons-box {
+    margin-left: 80px;
+    position: relative;
+}
+
+.share-box .icons-box::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: -50px;
+    width: 40px;
+    height: 1px;
+    background-color: #666;
+}
+
+.mark {
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.close {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #777;
+    cursor: pointer;
+}
+
+.latest-post-right {
+    width: 400px;
+    margin-right: 5px;
+    border-radius: 15px;
+    height: 400px;
+    /* background-color: yellow; */
+    margin-top: 200px;
+    margin-right: 20px;
+    border: 1px solid rgb(221, 221, 221);
+
+}
+
+.latest-post-right h2 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.latest-post-right .btn1 button,
+.btn2 button,
+.btn3 button {
+    width: 100px;
+    border-radius: 15px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid rgb(221, 221, 221);
+
+
+}
+
+.latest-post-right-down {
+    margin-top: 150px;
+    border: 0px;
+    height: 200px;
+}
+
+.latest-post-right-down button {
+    padding: 5px;
+    width: 330px;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid rgb(221, 221, 221);
+}
+
+.latest-post-right-down .btn-2 {
+    background-color: rgb(95, 46, 128);
+    margin-top: 10px;
+    color: white;
+    border: 0;
+    margin-bottom: 5px;
+}
+
+.latest-post-right-down p {
+    font-weight: bold;
+    text-align: center;
+}

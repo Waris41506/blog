@@ -1,0 +1,217 @@
+.home{
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.home-page-info{
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.left {
+    
+    width: 68%;
+    height: 570px;
+    position: relative;
+    margin-right: 30px;
+    
+}
+
+.img-cover{
+    background-color:  rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 570px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: start;
+}
+
+.img-cover button{
+    width: 150px;
+    padding: 8px;
+    font-weight: bold;
+    margin-top: 40%;
+    margin-left: 10%;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    background-color: rgb(95, 46, 128);
+    color: white;
+}
+
+.img-cover h2{
+    margin-left: 10%;
+    max-width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-cover p{
+    margin-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777;
+}
+
+
+
+.left img{
+    width: 100%;
+    height: 570px;
+    border-radius: 15px;
+   cursor: pointer;
+   
+}
+
+
+.right{
+    border: 1px solid rgb(221, 221, 221);
+    width: 30%;
+    height: 84vh;
+    border-radius: 20px;
+    position: relative;
+
+} 
+
+.btn-box .btn{
+    width: 150px;
+    padding: 8px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgb(221, 221, 221);
+}
+
+.btn-corrent{
+    border: 0;
+    background-color: rgb(95, 46, 128);
+    color: white;
+    transition: .5s;
+
+}
+button:hover{
+    /* background-color: rgb(175, 138, 199); */
+    transition: .5s;
+    font-weight: bold;
+    transform: translateY(-2px);
+}
+.popular{
+    display: flex;
+    flex-direction: column;
+    animation: slide_recent .5s forwards;
+    display: none;
+}
+
+.popular-current{
+    display: block;
+}
+@keyframes slide_recent {
+    0%{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+button{
+    cursor: pointer;
+}
+.popular-user{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 10px;
+    border-bottom: .8px solid rgb(173, 173, 173);
+    width: 80%;
+}
+.popular-user img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.popular-info h4, p{
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.popular-info p{
+    color: #555;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: -12px;
+}
+
+
+.spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(225, 225, 225, .4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+}
+.spinner .spinner-load{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    border: 6px solid rgb(110, 108, 108);
+    position: relative;
+    animation: load 2s forwards infinite;
+}
+
+
+@keyframes load {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.spinner-load::after{
+    content: "";
+    position: absolute;
+    top: -6px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 3px;
+}
+.spinner-load::before{
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 30px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+@media screen and  (max-width: 1200px) {
+    .home-page-info{
+        flex-direction: column;
+    }
+    .left, .right{
+        margin: 10px;
+        width: 100%;
+    }
+}

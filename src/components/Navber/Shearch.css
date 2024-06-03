@@ -1,0 +1,42 @@
+.shearch-span{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .3);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .1s;
+    animation: span_slide 1s forwards;
+    z-index: 100;
+}
+
+.shearch-span:hover{
+    border: 2px solid rgb(95, 46, 128);
+    color: rgb(231, 104, 104);
+}
+.shearch-inp{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+}
+
+.shearch-inp input{
+    width: 50%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.shearch-inp input::placeholder{
+    font-size: 20px;
+    font-weight: bold;
+}

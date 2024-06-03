@@ -1,0 +1,134 @@
+.trending{
+    width: 100%;
+    height: 100vh;
+    margin-top: 280px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.trending h1{
+    position: absolute;
+    top: -240px;
+    left: 10px;
+    margin-top: 20px;
+}
+
+.trending-left{
+    width: 60%;
+    height: 130%;
+    margin-top: -150px;
+    border-radius: 15px;
+    border: 1px solid rgb(221, 221, 221);
+    margin-left: -20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.trending-right{
+    width: 30%;
+    height: 130%;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+
+.trending-left-info{
+    
+    width: 48%;
+    
+}
+
+.trending-left-down-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-post .popular-info h4{
+    color: #444;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.trending-right-top{
+    widows: 100%;
+    height: 500px;
+    border-radius: 15px;
+    border: 1px solid rgb(221, 221, 221) ;
+    
+}
+
+.trending-right-top-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(221, 221, 221) ;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+
+.trending-right-top-info .span-info{
+    display: flex;
+    align-items: center;
+    
+}
+
+.trending-right-top-info .span-info .left-span{
+    margin-right: 8px;
+    font-weight: bold ;
+    font-size: 16px;
+    color: #444;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.span-info p{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.trending-right-down{
+    width: 100%;
+    height: 300px;
+    margin-top: 60px;
+    border-radius: 15px;
+    border: 1px solid rgb(221, 221, 221) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.trending-inp{
+    padding: 5px;
+    width: 325px;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+.trending-right-down button{
+    padding: 5px;
+    width: 330px;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid rgb(221, 221, 221);
+}
+
+.trending-right-down .btn-2{
+    background-color: rgb(95, 46, 128);
+    margin-top: 10px;
+    color: white;
+    border: 0;
+    margin-bottom: 5px;
+}
+
+.trending-right-down p a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(166, 41, 170);
+}

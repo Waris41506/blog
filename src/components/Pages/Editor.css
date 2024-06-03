@@ -1,0 +1,253 @@
+.edit-page{
+    width: 95%;
+    height: 100vh;
+    margin-top: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.edit-page-left{
+    width: 63%;
+    height: 100%;
+    margin-left: 1%;
+    border: 1px solid rgb(221, 221, 221);
+    margin-left: -20px;
+    border-radius: 10px;
+    padding-left: 10px;
+   padding-right: 5px;
+   margin-top: 40px;
+   
+}
+
+.edit-page-right{
+    width: 35%;
+    height: 100%;
+   border-radius: 5px;
+   padding: 2px;
+}
+
+.edit-page-left h1{
+    text-align: start;
+    font-size: 25px;
+}
+
+.img-box{
+     position: relative;
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     width: 370px;
+     height: 600px;
+     padding: 5px;
+     margin-right: 5px;
+     
+}
+.img-box button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    padding: 8px;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-left: 3%;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    background-color: rgb(95, 46, 128);
+    color: white;
+}
+.img-box img{
+    width: 100%;
+    border-radius: 10px;
+}
+.img-box span{
+    position: absolute;
+    bottom: 320px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(95, 46, 128);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid white;
+}
+
+.edit-page-inner-flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.edit-page-info{
+    width: 330px;
+    height: 600px;
+    border-radius: 5px;
+    /* border: 1px solid rgb(221, 221, 221); */
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-post{
+    display: flex;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+   
+}
+
+.edit-post:first-child{
+    margin-top: 0;
+}
+
+.edit-post img{
+    width: 100px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.post-active{
+    position: relative;
+}
+
+.post-active span{
+    /* background-color: brown; */
+    width: 25px;
+    height: 25px;
+    background-color: rgb(95, 46, 128);
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    color: white;
+    left: 0;
+}
+
+/* .post-active:active{
+} */
+
+.img-box .popular-user{
+    position: absolute;
+    top: 260px;
+    left: -20px;
+    width: 100%;
+    border-bottom: 0px;
+    color: #555;
+}
+
+.edit-page-down-text{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    left: -10px;
+    bottom: -250px;
+    padding-right: 5px;
+}
+
+.edit-page-down-text h2, p{
+    text-align: start;
+   
+}
+
+.edit-page-down-text p{
+    margin-right: 10px;
+}
+
+.popular-user h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.edit-page-right-top-info{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    border: 1.5px solid rgb(221, 221, 221);
+   
+    
+
+}
+
+.edit-page-right-top-info h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.edit-page-right-top-info p{
+    padding-right: 20px;
+    text-align: start;
+    width: 90%;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.edit-page-right-down-info{
+    width: 100%;
+    height: 600px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 1.5px solid rgb(221, 221, 221);
+
+}
+
+@media screen and (max-width: 1200px) {
+    .edit-page{
+        flex-direction: column;
+        height: 100vh;
+        margin-bottom: 100vh;
+        align-items: center;
+    }
+
+    .edit-page-left{
+        display: flex;
+        flex-direction: column;
+        /* margin-left: 100px; */
+        width: 80%;
+    }
+
+    .edit-page-right{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        margin-top: 50px;
+        align-items: center;
+        flex-direction: row-reverse;
+        
+    }
+    .edit-page-right-top-info, .edit-page-right-down-info{
+        margin: 10px;
+    }
+
+    
+
+    
+}
+
+@media screen and (max-width: 850px) {
+    .edit-page{
+        width: 100%;
+    }
+
+    .edit-page-inner-flex{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    .edit-page-right{
+        margin-top: 700px;
+        background-color: red;
+        
+    }
+    .edit-page-info{
+        /* background-color: red; */
+        padding: 10px;
+    }
+    .edit-page-info .edit-post img{
+        width: 30%;
+        height: 80%;
+    }
+}
